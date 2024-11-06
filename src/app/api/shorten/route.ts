@@ -8,8 +8,8 @@ export async function POST(req: Request) {
   return NextResponse.json({ shortUrl }, { status: 201 });
 }
 
-export async function GET(req: Request, res: NextResponse) {
-  const shortenerService = new UrlShortenerService();
-  const response = await shortenerService.getAllUrls();
-  return NextResponse.json({ response });
-}
+// export async function GET(req: Request, res: NextResponse) {
+//   const shortenerService = new UrlShortenerService();
+//   const response = await shortenerService.getAllUrls();
+//   return NextResponse.json({ response });
+// }
